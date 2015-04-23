@@ -16,3 +16,7 @@ Why is that? Well, in order for this to work on any device besides the iOS simul
 * Extract the .app file from the IPA.  
 * Delete the .mobileprovision file.  
 * Re-ZIP the "Payload" folder.  
+
+####Theos Setup  
+  
+If you do know how to compile theos projects and sign via ldid, then you could deploy to your device that way. However, I am not a theos developer, so therefore I cannot give you specific steps to successfully compile.
