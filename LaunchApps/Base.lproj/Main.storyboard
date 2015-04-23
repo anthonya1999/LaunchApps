@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d5r-uU-D4D">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <scenes>
+        <!--Launch iOS Apps-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSb-NE-DAZ">
+                                <rect key="frame" x="251" y="133" width="98" height="30"/>
+                                <state key="normal" title="Open Settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lH6-PS-YpK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHd-T8-F78">
+                                <rect key="frame" x="260" y="255" width="80" height="30"/>
+                                <state key="normal" title="Open Maps">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMaps:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WmK-FF-w7n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Er-I8-sSt">
+                                <rect key="frame" x="255" y="507" width="91" height="30"/>
+                                <state key="normal" title="Open Photos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openPhotos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSy-Hd-yr2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4n-nv-dIe">
+                                <rect key="frame" x="259" y="371" width="82" height="30"/>
+                                <state key="normal" title="Open Safari">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openSafari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgm-1N-8Ab"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Er-I8-sSt" firstAttribute="centerX" secondItem="pHd-T8-F78" secondAttribute="centerX" id="9Ar-70-4LC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z4n-nv-dIe" secondAttribute="bottom" constant="199" id="E2W-PT-mjB"/>
+                            <constraint firstItem="pHd-T8-F78" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FJH-DO-gaH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Er-I8-sSt" secondAttribute="bottom" constant="63" id="Mew-si-ouv"/>
+                            <constraint firstItem="OSb-NE-DAZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="Qk4-wV-eBF"/>
+                            <constraint firstItem="OSb-NE-DAZ" firstAttribute="centerX" secondItem="pHd-T8-F78" secondAttribute="centerX" id="SuB-yM-TBv"/>
+                            <constraint firstItem="Z4n-nv-dIe" firstAttribute="centerX" secondItem="pHd-T8-F78" secondAttribute="centerX" id="TSP-2j-BLo"/>
+                            <constraint firstItem="pHd-T8-F78" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="sk2-vF-OfR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Launch iOS Apps" id="tQS-GG-TzT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="350"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YKN-7d-I8P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d5r-uU-D4D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lZU-nW-dH6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vem-3D-MV0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4PI-GE-mNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="1011"/>
+        </scene>
+    </scenes>
+</document>
